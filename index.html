@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MYHW
+        </title>
+        <style>
+            .container {
+                margin: auto;
+                width: auto; /* Allow the container to span the full width */
+                padding: 20px;
+                background-color: #dfdfdf;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                color: #333;
+                text-align: center;
+                display: flex; /* Use flexbox for layout */
+                flex-wrap: wrap; /* Allow items to wrap to the next row */
+                overflow-x: hidden; /* Remove horizontal scrolling */
+                justify-content: center; /* Center all items */
+                align-items: flex-start; /* Ensure items are aligned at the top */
+                gap: 30px; /* Increase the gap for better spacing */
+                max-width: 1000px; /* Increase the container width for better balance */
+                margin: 0 auto; /* Center the container on the page */
+            }
+            .product {
+                margin: 0; /* Remove extra margin for better alignment */
+                flex: 1 1 calc(25% - 30px); /* Ensure products are evenly distributed in rows */
+                box-sizing: border-box; /* Include padding and border in width */
+                max-width: 220px; /* Set a maximum width for products */
+                background-color: #fff; /* Add a white background for separation */
+                border: 1px solid #ccc; /* Add a border around each product */
+                border-radius: 8px; /* Add rounded corners */
+                padding: 15px; /* Add padding inside the product block */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            }
+            .product img {
+                width: 100%;
+                height: 300px; /* Set a fixed height for uniformity */
+                object-fit: cover; /* Ensure the image scales properly */
+                border-radius: 8px;
+                margin-bottom: 15px;
+            }
+
+            /* Media query for mobile devices */
+            @media (max-width: 768px) {
+                .product {
+                    flex: 1 1 calc(50% - 20px); /* Display 2 products per row */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="product">
+                <img src="https://1stationhub.com.my/cdn/shop/files/HOTWHEELS_HW_MOTO_HONDA_CB750_CAFE_RED_BLACK_1.jpg?v=1741448831" alt="honda cb750 cafe">
+                <p><strong>honda cb750 cafe</strong></p>
+                <p>99k</p>
+            </div>
+            <div class="product">
+                <img src="https://i.ebayimg.com/images/g/00cAAOSwLNZntr2n/s-l1600.webp" alt="aston martin">
+                <p><strong>aston martin</strong></p>
+                <p>80k</p>
+            </div>
+            <div class="product">
+                <img src="https://i.ebayimg.com/images/g/i64AAOSw3TtnGw74/s-l1600.webp" alt="aston martin">
+                <p><strong>aston martin</strong></p>
+                <p>75k</p>
+            </div>
+            <div class="product">
+                <img src="https://i.ebayimg.com/images/g/KIUAAeSw2CRn8Bze/s-l1600.webp" alt="aston martin">
+                <p><strong>chevy c10</strong></p>
+                <p>45k</p>
+            </div>
+            <div class="product">
+                <img src="https://i.ebayimg.com/images/g/mZkAAOSwO69nGdKu/s-l1200.jpg" alt="aston martin">
+                <p><strong>mazda repu</strong></p>
+                <p>45k</p>
+            </div>
+        </div>
+    </body>
+</html>
